@@ -103,7 +103,7 @@ foreach($html->find('span') as $span)
 				$post_fields['__RequestVerificationToken'] = $requestVerificationToken[0]->value;
 				$post_fields['__VIEWSTATE'] = $view_state[0]->value;
 				$post_fields['__VIEWSTATEGENERATOR'] = $viewstate_generator[0]->value;
-				$post_fields['lst_ttl_A'] = $ttl;
+				$post_fields['lst_ttl_A'] = $config['$ttl'];
 				$post_fields['txt_Host_A'] = $config['host'];
 				$post_fields['txt_IP_A'] = $config['new_ip_address'];
         
